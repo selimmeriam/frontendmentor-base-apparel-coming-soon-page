@@ -1,0 +1,227 @@
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+
+.desktop {
+  background: linear-gradient(135deg, hsl(0, 100%, 98%), hsl(0, 0%, 100%));
+}
+/*.desktop.mobile {
+  background: linear-gradient(to bottom, hsl(0, 0%, 100%), hsl(0, 57%, 82%));
+}*/
+.container {
+  background-image: url('https://raw.githubusercontent.com/rahulkhimsuriya/frontendmentor-base-apparel-coming-soon-page/0909a64dd7f3eb3b892a2544b86b4de3b87a4281/images/bg-pattern-desktop.svg');
+  display: flex;
+}
+.content {
+  /*border: 1px solid yellow;*/
+  display: flex;
+  flex-direction: column;
+  padding: 1rem 2rem;
+  margin: 3rem auto;
+}
+.header {
+  width: 50%;
+  margin-bottom: 7rem;
+}
+
+h1 {
+  font-family: 'Josefin Sans', sans-serif;
+  text-transform: uppercase;
+  font-size: 5rem;
+  letter-spacing: 1rem;
+  line-height: 1;
+}
+/*.info {
+  border: 1px solid green;
+}*/
+.info-header {
+  display: inline-block;
+}
+
+.text-pink {
+  font-weight: 300;
+  color: hsl(0, 36%, 70%);
+  display: block;
+}
+
+.container-text-content {
+  font-size: 16px;
+  line-height: 28px;
+  max-width: 404px;
+  margin-bottom: 40px;
+  padding: 1rem 0 0.5rem 0;
+}
+p.container-text-content {
+  font-family: 'Josefin Sans', sans-serif;
+  display: block;
+  color: hsl(0, 36%, 70%);
+  /*border: 1px solid green*/
+}
+
+.form-container > form {
+  display: flex;
+  align-items: center;
+  position: relative;
+}
+
+input {
+  width: 100%;
+  padding: 1.3rem;
+  border: 1px solid hsl(0, 36%, 70%);
+  border-radius: 2rem;
+  font-size: 1rem;
+  font-weight: 300;
+}
+
+input::placeholder {
+  color: #efdbdd;
+  font-size: 1rem;
+  font-weight: 400;
+}
+input:focus {
+  outline: none;
+}
+
+button {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 7.5rem;
+  height: 3.75rem;
+  border: none;
+  border-radius: 2rem;
+  background: linear-gradient(135deg, hsl(0, 80%, 86%), hsl(0, 74%, 74%));
+  box-shadow: 0px 3px 3px hsl(0, 93%, 68%);
+  transition: box-shadow 0.5s;
+  position: absolute;
+  right: 0;
+}
+button:hover {
+  box-shadow: 0px 3px 3px hsl(0, 6%, 24%);
+  cursor: pointer;
+}
+
+.email-error-icon {
+  position: absolute;
+  right: 10rem;
+}
+
+.email-error-border {
+  border: 1px solid hsl(0, 93%, 68%);
+}
+
+.email-error-text p {
+  padding: 1rem 0 0 1.5rem;
+  font-family: 'Josefin Sans', sans-serif;
+  font-size: 1rem;
+  font-weight: 400;
+  color: hsl(0, 6%, 24%);
+}
+
+.hidden {
+  visibility: hidden;
+}
+
+.cont-footer {
+  margin: 0;
+  padding: 2rem 4rem;
+  text-align: center;
+}
+.cont-footer p {
+  color: hsl(0, 6%, 24%);
+  font-family: 'Josefin Sans', sans-serif;
+  display: block;
+}
+.cont-footer a {
+  color: hsl(0, 36%, 70%);
+}
+.cont-footer a:hover {
+  color: hsl(0, 93%, 68%);
+}
+
+@media screen and (min-width: 1439px) {
+  img.mobile {
+    display: none;
+  }
+  .content {
+    margin: 3rem;
+  }
+}
+@media screen and (max-width: 1439px) {
+  input {
+    margin: 1.2rem auto;
+    width: 80%;
+    padding: 0.3rem;
+  }
+  button {
+    width: 3.5rem;
+    height: 1.8rem;
+    right: 10%;
+  }
+
+  img.mobile {
+    display: block;
+  }
+
+  img.desktop {
+    display: none;
+  }
+
+  .desktop {
+    background: linear-gradient(to bottom, hsl(0, 0%, 100%), hsl(0, 57%, 82%));
+  }
+  .container {
+    background-image: url('');
+  }
+  .content {
+    max-width: 60%;
+    margin: 3rem auto;
+  }
+
+  .info {
+    margin-top: 3rem;
+    text-align: center;
+  }
+  .info > .info-header {
+    font-size: clamp(1.2rem, 4vw, 5rem);
+    line-height: 1.5;
+    font-weight: 400;
+    display: inline-block;
+    max-width: 75%;
+    margin: auto;
+  }
+  .info > .container-text-content {
+    text-align: center;
+    max-width: 80%;
+    margin: auto;
+  }
+  .email-error-text p {
+    width: 80%;
+    margin: 3rem auto;
+  }
+}
+
+@media screen and (max-width: 550px) {
+  .content {
+    width: 90%;
+    padding: 1rem 0rem;
+  }
+  .email-error-icon {
+    position: absolute;
+    right: 35%;
+  }
+}
+
+@media screen and (max-width: 420px) {
+  .content {
+    width: 100%;
+    margin: 3rem auto;
+  }
+}
+@media screen and (max-width: 320px) {
+  body {
+    border: 1px solid red;
+  }
+}
