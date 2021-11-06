@@ -24,8 +24,8 @@ Users should be able to:
 
 ### Links
 
-- Solution URL: [Click here]()
-- Live Site URL: [Click here]()
+- Solution URL: [Click here](https://www.frontendmentor.io/solutions/responsive-base-apparel-coming-soon-page-using-html-css-and-js-0Oc3jVs_6)
+- Live Site URL: [Click here](https://selimmeriam.github.io/frontendmentor-base-apparel-coming-soon-page/)
 
 
 ### Built with
