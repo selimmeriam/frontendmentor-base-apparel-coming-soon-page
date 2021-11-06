@@ -3,11 +3,12 @@
   margin: 0px;
   box-sizing: border-box;
 }
-html, body {
+html,
+body {
   margin: 0px;
-    padding: 0px;
-    height: 100%;
-    width: 100%;
+  padding: 0px;
+  height: 100%;
+  width: 100%;
 }
 .desktop {
   background: linear-gradient(135deg, hsl(0, 100%, 98%), hsl(0, 0%, 100%));
@@ -142,12 +143,9 @@ button:hover {
 .cont-footer a:hover {
   color: hsl(0, 93%, 68%);
 }
-
-/*img.mobile{
-  border:1px solid red;
-  max-width: 100%;
-  margin: auto;
-}*/
+main > img.mobile {
+  width: 100%;
+}
 
 @media screen and (min-width: 1439px) {
   img.mobile {
@@ -220,11 +218,6 @@ button:hover {
     position: absolute;
     right: 35%;
   }
-  /*img.mobile{
-    border:1px solid red;
-    max-width: 80%;
-    margin: auto;
-  }*/
 }
 
 @media screen and (max-width: 420px) {
@@ -232,7 +225,6 @@ button:hover {
     width: 100%;
     margin: 3rem auto;
   }
-  
 }
 @media screen and (max-width: 320px) {
   body {
