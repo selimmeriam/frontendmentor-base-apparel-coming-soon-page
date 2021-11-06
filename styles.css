@@ -155,11 +155,13 @@ main > img.mobile {
     margin: 3rem 2rem 3rem 3.5rem;
   }
 }
-@media screen and (max-width: 2000px) {
+
+@media screen and (min-width: 1650px) {
   .container {
     justify-content: center;
   }
 }
+
 @media screen and (max-width: 1439px) {
   input {
     margin: 1.2rem auto;
